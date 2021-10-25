@@ -1,0 +1,595 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500,700&display=swap&subset=cyrillic-ext ");
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 16px; /* по умолчанию */
+}
+body {
+  line-height: 1;
+  font-family: "Roboto", serif;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+/* ------------------------------ */
+.wrapper {
+  background-color: #cdcdcd;
+  padding-bottom: 50px;
+}
+*:focus {
+  background-color: rgba(201, 207, 123, 0.4);
+}
+.task_1 {
+  background: url(../img/m_run.png) 100% 0/50% 340px no-repeat,
+    radial-gradient(circle, #3e7336a5 48%, #41462c 100%);
+  min-height: 340px;
+  padding: 30px 0px 0px 0px;
+  margin-bottom: 30px;
+}
+.container {
+  max-width: 1250px;
+  margin: 0px auto;
+  font-size: 0;
+}
+.container .box:not(:first-child) {
+  width: 150px;
+  vertical-align: top;
+  font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  display: inline-block;
+  margin: 0px 10px 5px;
+}
+.container .box:first-child {
+  display: inline-block;
+  max-width: 350px;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #151b0f;
+  padding: 100px 50px;
+  text-shadow: -3px -1px 4px #000;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.container .box:first-child:hover {
+  padding: 80px 0px;
+  letter-spacing: 5px;
+  font-size: 70px;
+}
+.box:first-child:hover::after {
+  content: "The font doesn't adapt";
+  display: block;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-shadow: none;
+  font-weight: 300;
+  text-align: center;
+  padding: 10px 0px;
+  color: #242324;
+}
+.container div:hover:not(:first-child, :last-child) div::after {
+  content: "";
+  display: block;
+  background-color: #0f1611;
+  height: 2px;
+  width: 50%;
+  margin: 10px auto 15px;
+}
+.container .box:nth-child(4) .link {
+  color: #000;
+}
+.imagetarget {
+  display: none;
+  width: 150px;
+  background: #4b4b4a;
+  border-radius: 5px;
+}
+.imagetarget img {
+  width: 150px;
+}
+.imagetarget:target {
+  display: block;
+}
+.close {
+  background: #6d6d52;
+  font-size: 20px;
+  width: 100%;
+  display: inline-block;
+  border-radius: 0px 0px 5px 5px;
+  padding: 5px 0px 0px;
+}
+.close::before {
+  content: "";
+  background: url(../img/up.png) 0 0/20px no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 23px;
+}
+.close:active {
+  background: #857f68;
+}
+
+.list {
+  opacity: 0;
+  visibility: hidden;
+  background: #4b4b4a;
+  padding: 5px;
+  color: #dadada;
+  border-radius: 5px;
+}
+.list li:nth-child(odd) {
+  background-color: #dbdd6d81;
+}
+.container .box:nth-child(5):hover .list {
+  opacity: 1;
+  visibility: visible;
+}
+.list li {
+  padding: 5px 0px;
+}
+.list li:hover::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/left.png) 100% 100%/15px no-repeat;
+}
+.link {
+  color: rgb(13, 12, 12);
+  line-height: 20px;
+}
+.link:visited {
+  color: #6e8039;
+}
+.search {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: right;
+  padding: 8px;
+  background: #fff;
+  margin: 0px 0px 0px auto;
+}
+.search:hover {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+}
+
+/* -------------------------------- */
+.main {
+  font-size: 0px;
+  padding-bottom: 30px;
+}
+.block_1 {
+  width: 50%;
+  font-size: 0px;
+  margin: 0px auto 30px;
+}
+.block_1 * {
+  font-size: 16px;
+}
+.block_1 > div {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0px 28px 28px -12px rgba(0, 0, 0, 0.75);
+  margin: 0px 10px 0px 0px;
+}
+.block_1:hover .text {
+  display: inline-block;
+}
+.block_1:hover .title {
+  display: none;
+}
+.title {
+  display: inline-block;
+  width: 50%;
+  padding: 135px 0px;
+  background: url(../img/cinema.png) 50% 100%/150% no-repeat,
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 91%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #999898;
+}
+.title h2 {
+  font-size: 70px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+}
+.title h2::before {
+  content: "Фильмец";
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.15px;
+  color: #d8d5d5;
+  font-weight: 300;
+}
+.image {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+.text {
+  display: none;
+  width: 50%;
+  background: url(../img/film.png) 50% / auto 400px no-repeat;
+  line-height: 140%;
+  font-size: 18px;
+  color: #292822;
+}
+.item li {
+  background-color: rgba(169, 169, 169, 0.3);
+}
+
+.item li *> p:first-of-type::before {
+  content: "Оргинальное название";
+  display: block;
+  background-color: rgba(82, 99, 109, 0.7);
+  font-weight: 700;
+  color: #111111;
+}
+.item li:nth-child(2) > p:first-of-type::before {
+  content: "Жанр";
+  display: block;
+  background-color: rgba(82, 99, 109, 0.7);
+  font-weight: 700;
+  color: #111111;
+}
+.item li:nth-child(3) > p:first-of-type::before {
+  content: "Год";
+  display: block;
+  background-color: rgba(82, 99, 109, 0.7);
+  font-weight: 700;
+  color: #111111;
+}
+.item li:nth-child(4) > p:first-of-type::before {
+  content: "Длительность";
+  display: block;
+  background-color: rgb(82, 99, 109, 0.7);
+  font-weight: 700;
+  color: #111111;
+}
+.item li:last-child > p:first-of-type::before {
+  content: "Актеры";
+  display: block;
+  background-color: rgba(82, 99, 109, 0.7);
+  font-weight: 700;
+  color: #111111;
+}
+.item li::first-letter {
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+}
+
+.catList {
+  max-width: 1200px;
+  display: block;
+  margin: 0px auto;
+  background: #808b91;
+  text-align: center;
+  border-radius: 0px 40px;
+}
+.items {
+  counter-reset: List;
+  font-size: 16px;
+  padding: 30px 0px;
+  margin: 0px 0px 30px 0px;
+}
+.items > li {
+  width: 30%;
+  display: inline-block;
+  border-radius: 0px 40px;
+  border: 3px solid #698097;
+  background-color: #a8e8f3;
+  text-align: center;
+  vertical-align: top;
+  padding: 20px 50px;
+}
+.items > li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.items > li:hover {
+  background: #698097;
+  box-shadow: 0px 0px 3px 4px#dfebf7;
+}
+.items > li:active {
+  background-color: #698097;
+  box-shadow: 0px 0px 8px 6px#f4dff7;
+}
+.items > li:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+.items p {
+  padding: 20px 30px;
+  border-radius: 40px;
+  border: 1px solid #3d6e77;
+  background-color: #688b99;
+  box-shadow: 0px 2px 3px #313030;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: rgb(135, 201, 179);
+  margin-bottom: 20px;
+}
+.items p:hover {
+  text-shadow: 0px 0px 20px rgb(218, 243, 255);
+}
+.items p:active {
+  background: #3d6e77;
+}
+.catImg {
+  width: 100%;
+  height: 300px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 30px;
+}
+.img1 {
+  background: url(../img/cat_1.jpg) 50%/100% no-repeat;
+  opacity: 0.5;
+}
+.img2 {
+  background: url(../img/cat_2.jpg) 50%/100% no-repeat;
+  opacity: 0;
+}
+.items p:hover + ul .img1 {
+  opacity: 1;
+}
+.items p:active + ul .img2 {
+  opacity: 1;
+}
+.lastCat ~ div::before {
+  content: "";
+  background: url(../img/cat_3.jpg) 50%/100% no-repeat;
+  width: 100%;
+  height: 300px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 30px;
+}
+.lastCat:hover ~ div::before {
+  content: "";
+  display: none;
+}
+.lastCat:hover ~ div::after {
+  content: "";
+  background: url(../img/cat_4.jpg) 50%/100% 300px no-repeat;
+  width: 100%;
+  height: 300px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+/* ---------------------------------------- */
+.task_2 {
+  width: 70%;
+  padding: 20px 30px;
+  margin: 0px auto 30px;
+  background-color: rgb(133, 193, 233);
+  border-radius: 20px;
+  box-shadow: -8px -5px 10px #2b2a2a;
+}
+.boxList {
+  counter-reset: numb;
+  font-size: 24px;
+  text-shadow: -3px -1px 2px #2b2a2a;
+  font-weight: 700;
+  color: #1c504a;
+  padding: 20px;
+  background: rgba(241, 181, 40, 0.329);
+  border-radius: inherit;
+  box-shadow: inherit;
+}
+.boxList li {
+  padding: 20px 60px;
+  background: rgba(116, 2, 26, 0.2);
+  border-radius: inherit;
+  box-shadow: inherit;
+}
+.boxList li:hover {
+  background: rgba(80, 20, 175, 0.2);
+}
+.boxList li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.boxList li::before {
+  counter-increment: numb;
+  content: counter(numb) "";
+  display: inline-block;
+  margin: 0px 20px 0px -50px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #8d2986a9;
+  box-shadow: inherit;
+  text-shadow: none;
+  text-align: center;
+  color: #dcdf4e;
+  padding: 3px 0px;
+}
+.boxList li:hover::before {
+  background: #80f09859;
+}
+
+/* ---------------------------------------- */
+
+.task_3 {
+  max-width: 1120px;
+  padding: 15px 50px 50px;
+  margin: 0px auto 30px;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  font-size: 0px;
+}
+.subtitleTask {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #5d62b5;
+  margin: 0px 0px 33px 0px;
+}
+.subtitleTask::before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 24px;
+  height: 24px;
+  background: url(../img/OverlineMark.png) 0 0/100% no-repeat;
+  margin: 0px 16px 0px 0px;
+}
+.titleTask {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+  margin: 0px 0px 68px 0px;
+}
+.taskList li{
+	display: inline-block;
+	width: 324px;
+	font-size: 0px;
+	vertical-align: top;
+}
+.taskList li:not(:last-child) {
+  margin: 0px 24px 0px 0px;
+}
+.taskList li::before {
+	content: "";
+	width: 63px;
+	height: 63px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px 23px 0px 0px;
+ }
+ .taskList li:first-child::before{
+	 content: "";
+	 background:url(../img/dog_love_24x.png) 0 0 no-repeat;
+ }
+ .taskList li:nth-child(2)::before{
+	 content: "";
+	 background:url(../img/dog_vet_24x.png) 0 0 no-repeat;
+ }
+ .taskList li:last-child::before{
+	 content: "";
+	 background:url(../img/dog_stream_24x.png) 0 0 no-repeat;
+ }
+ .content{
+	display: inline-block;
+	width: 235px;
+	vertical-align: top;
+}
+.listTitle {
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 26px;
+  color: #f2726f;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+.content p{
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #4b4b4b;
+ }
+/* ----------------------------- */
+
+.task_4 {
+  max-width: 355px;
+  margin: 0px auto;
+  padding: 30px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  font-family: "HelveticaNeueCyr", "Sans serif";
+}
+.taskBlock {
+  max-width: 255px;
+  background: #252525;
+  border-radius: 5px;
+  padding: 24px;
+  margin: 0px auto;
+}
+.taskBlock h5 {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -0.275px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.taskBlock h5::after {
+  content: "";
+  display: block;
+  max-width: 56px;
+  height: 2px;
+  background: #34c759;
+  margin: 20px 0px 0px 0px;
+}
+.taskBlock p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.1625px;
+  color: rgba(255, 255, 255, 0.5);
+}
